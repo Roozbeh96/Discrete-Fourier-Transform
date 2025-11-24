@@ -2,10 +2,10 @@
 
 In the main direction of the flow contributes to the turbulence at different scales. First, to calculate the $\text{E}_{11}(\text{k})$, the streamwise fluctuating velocity signal (i.e., no matter H-W or generated dataset) at a specific wall-normal elevation, is segmented into signals with the spatial length scale of $12\delta$. This length is the largest resolved length scale in the spectrum and represents the scale of very large-scale motions (VLSMs)\citep{kim1999very, zhou1999mechanisms, Guala06, balakumar2007large}. For time-resolved datasets, such as H-W and Sonic, the Taylor frozen hypothesis is employed to switch from the temporal domain to the spatial domain for the signal segmentation(i.e., $\text{x} = \overline{\text{U}}t$). The number of segments $\text{M} \in \mathbb{N}$, after chopping the $\text{u}^{\prime}$ signal into segments of length $12\delta$, is $\text{M} = \left\lfloor \frac{\text{L}}{12\delta} \right\rfloor$, where $\text{L}$ is the length of the entire signal. Each segmented $12\delta$ signal, has $\text{N}= \left\lceil \frac{12\delta}{\Delta x} \right\rceil\in \mathbb{N}$ number of samples. The streamwise velocity power spectrum density for each segmented signal is given by discrete Fourier analysis:
 
-$\text{E}_{11_{m}}(\text{k})[\frac{\text{m}^3}{\text{s}^2}] = \frac{\Delta x}{\text{N}\text{G}} | \sum_{n=0}^{\text{N}-1} w(n)\text{u}^{\prime}(n) e^{-j\frac{2\pi n}{\text{N}}\text{k}} |^2$
+$\text{E}_{11_{m}}(\text{k})[\frac{\text{m}^3}{\text{s}^2}] = \frac{\Delta x}{\text{N}\text{G}}|\sum_{n=0}^{\text{N}-1} w(n)\text{u}^{\prime}(n) e^{-j\frac{2\pi n}{\text{N}}\text{k}}|^2$
 
 
-$\text{where} \text{k} = \{0,1,\dots,\text{N-1}\} \text { and } m = \{1,2,\dots,\text{M}\}$
+$\text{where } \text{k} = \{0,1,\dots,\text{N-1}\} \text { and } m = \{1,2,\dots,\text{M}\}$
 
 To avoid energy leakage from one wavenumber bin to the neighboring bins, the Hann window function, $w(n)$, is used, and $\text{G} = \frac{1}{\text{N}} \sum_{n=0}^{\text{N}-1} w(n)^2$ is the window power normalization factor. The ensemble average of all segmented signals is $\overline{\text{E}_{11}}(\text{k})=\frac{1}{\text{M}}\sum_{m=1}^{\text{M}}\text{E}_{11_{m}}(\text{k})$. To have single-sided power spectrum density
 
