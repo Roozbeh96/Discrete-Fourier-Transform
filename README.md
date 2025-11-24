@@ -2,16 +2,8 @@
 
 In the main direction of the flow contributes to the turbulence at different scales. First, to calculate the $\text{E}_{11}(\text{k})$, the streamwise fluctuating velocity signal (i.e., no matter H-W or generated dataset) at a specific wall-normal elevation, is segmented into signals with the spatial length scale of $12\delta$. This length is the largest resolved length scale in the spectrum and represents the scale of very large-scale motions (VLSMs)\citep{kim1999very, zhou1999mechanisms, Guala06, balakumar2007large}. For time-resolved datasets, such as H-W and Sonic, the Taylor frozen hypothesis is employed to switch from the temporal domain to the spatial domain for the signal segmentation(i.e., $\text{x} = \overline{\text{U}}t$). The number of segments $\text{M} \in \mathbb{N}$, after chopping the $\text{u}^{\prime}$ signal into segments of length $12\delta$, is $\text{M} = \left\lfloor \frac{\text{L}}{12\delta} \right\rfloor$, where $\text{L}$ is the length of the entire signal. Each segmented $12\delta$ signal, has $\text{N}= \left\lceil \frac{12\delta}{\Delta x} \right\rceil\in \mathbb{N}$ number of samples. The streamwise velocity power spectrum density for each segmented signal is given by discrete Fourier analysis:
 
-$
-E_{11_m}(k)\,\left[\frac{m^3}{s^2}\right]
-= 
-\frac{\Delta x}{N\,G}
-\left|
-\sum_{n=0}^{N-1}
-w(n)\,u'(n)\,
-e^{-j\,\frac{2\pi n}{N}\,k}
-\right|^2
-$
+$E_{11_m}(k)\,[m^3/s^2] = \frac{\Delta x}{N G} \left|\sum_{n=0}^{N-1} w(n)\,u'(n)\,e^{-j \frac{2\pi n}{N} k} \right|^2$
+
 
 \begin{equation}
     \text{E}_{11_{m}}(\text{k})[\frac{\text{m}^3}{\text{s}^2}] = \frac{\Delta x}{\text{N}\text{G}} \left| \sum_{n=0}^{\text{N}-1} w(n)\text{u}^{\prime}(n) e^{-j\frac{2\pi n}{\text{N}}\text{k}} \right|^2
