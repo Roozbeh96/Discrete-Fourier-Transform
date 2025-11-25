@@ -9,7 +9,7 @@ $\text{where } k = \{0,1,\dots,N-1\} \text { and } m = \{1,2,\dots,M\}$
 
 To avoid energy leakage from one wavenumber bin to the neighboring bins, the Hann window function, $w(n)$, is used, and $G = \frac{1}{N} \sum_{n=0}^{N-1} w(n)^2$ is the window power normalization factor. The ensemble average of all segmented signals is $\overline{E_{11}}(k)=\frac{1}{M}\sum_{m=1}^{M}E_{11_{m}}(k)$. To have single-sided power spectrum density:<br>
 
-$\bar{E_{11_{single-sided}}}(k)=2\overline{E_{11}}(k)\quad \text{for } k
+$\overline{E}_{11_{single-sided}}(k)=2\overline{E_{11}}(k)\quad \text{for } k
  = \{1,2,\dots,\left\lceil \frac{N}{2} \right\rceil-1\}$
 
 $\overline{E_{11_{single-sided}}}(k)=\overline{E_{11}}(k)\quad \text{for } k = \{0,\left\lceil \frac{N}{2} \right\rceil\}$
